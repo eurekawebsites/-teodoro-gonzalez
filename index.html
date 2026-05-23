@@ -12,20 +12,20 @@
     a { color: inherit; text-decoration: none; }
 
     :root {
-      --green:      #6AAF2E;
-      --green-dk:   #4A8018;
-      --red:        #E8374A;
-      --red-dk:     #C02030;
-      --brown:      #7A4020;
-      --cream:      #FDF5E8;
-      --cream-dk:   #F0E4CC;
-      --yellow:     #F5C842;
-      --dark:       #2C1A0A;
+      --green:      #3A8A3A;
+      --green-dk:   #2A6A2A;
+      --red:        #E03020;
+      --red-dk:     #B82010;
+      --blue:       #3AABDC;
+      --brown:      #3A3A3A;
+      --cream:      #F4F4F6;
+      --cream-dk:   #E2E2E8;
+      --dark:       #1A1A1A;
       --white:      #FFFFFF;
     }
 
     body {
-      background: #E8F2D8;
+      background: #D8E4F0;
       min-height: 100vh;
       padding: 28px 16px 36px;
       font-family: 'Nunito', sans-serif;
@@ -47,16 +47,16 @@
       padding: 36px 28px 24px;
       text-align: center;
       position: relative;
-      border-bottom: 4px solid var(--red);
+      border-bottom: 4px solid var(--blue);
     }
 
-    /* Green arc at top */
+    /* Red arc at top */
     .card-hero::before {
       content: '';
       position: absolute;
       top: 0; left: 0; right: 0;
       height: 90px;
-      background: var(--green);
+      background: var(--red);
       border-radius: 0 0 50% 50% / 0 0 40px 40px;
     }
 
@@ -154,7 +154,7 @@
       font-size: 0.6rem;
       letter-spacing: 2px;
       text-transform: uppercase;
-      color: var(--green-dk);
+      color: var(--blue);
       font-weight: 700;
     }
 
@@ -166,8 +166,8 @@
 
     /* Save button */
     .btn-save {
-      background: var(--green);
-      border-color: var(--green-dk);
+      background: var(--red);
+      border-color: var(--red-dk);
       color: var(--white);
       justify-content: center;
       gap: 10px;
@@ -179,8 +179,8 @@
     }
 
     .btn-save:hover {
-      background: var(--green-dk);
-      border-color: var(--green-dk);
+      background: var(--red-dk);
+      border-color: var(--red-dk);
     }
 
     /* ── Footer ── */
@@ -195,8 +195,8 @@
       font-size: 0.58rem;
       letter-spacing: 2px;
       text-transform: uppercase;
-      color: var(--brown);
-      opacity: 0.6;
+      color: var(--dark);
+      opacity: 0.45;
       font-weight: 700;
       transition: opacity 0.2s;
     }
@@ -211,7 +211,7 @@
     <!-- HERO -->
     <div class="card-hero">
       <div class="hero-logo">
-        <img src="house.png" alt="Casa icono">
+        <img src="house2.png" alt="Casa icono">
       </div>
       <h1 class="card-name">Teodoro<br>González</h1>
       <p class="card-role">Arrendador &amp; Constructor</p>
@@ -223,7 +223,7 @@
       <a class="contact-btn"
          href="https://wa.me/525622125872"
          target="_blank" rel="noopener noreferrer">
-        <svg class="contact-btn-icon" viewBox="0 0 24 24" fill="#6AAF2E" xmlns="http://www.w3.org/2000/svg">
+        <svg class="contact-btn-icon" viewBox="0 0 24 24" fill="#3A8A3A" xmlns="http://www.w3.org/2000/svg">
           <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
         </svg>
         <span class="contact-btn-label">
