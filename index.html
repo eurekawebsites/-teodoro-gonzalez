@@ -229,6 +229,29 @@
         </span>
       </a>
 
+      <a class="contact-btn"
+         href="mailto:lutego44@gmail.com">
+        <svg class="contact-btn-icon" viewBox="0 0 24 24" fill="none" stroke="#A82A20" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <polyline points="2,4 12,13 22,4"/>
+        </svg>
+        <span class="contact-btn-label">
+          <span class="contact-btn-type">Correo</span>
+          <span class="contact-btn-value">lutego44@gmail.com</span>
+        </span>
+      </a>
+
+      <button class="contact-btn" onclick="copyClabe(this)" type="button" style="width:100%;text-align:left">
+        <svg class="contact-btn-icon" viewBox="0 0 24 24" fill="none" stroke="#A82A20" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2" y="5" width="20" height="14" rx="2"/>
+          <line x1="2" y1="10" x2="22" y2="10"/>
+        </svg>
+        <span class="contact-btn-label">
+          <span class="contact-btn-type">CLABE · HSBC</span>
+          <span class="contact-btn-value" id="clabe-val">021180040549679220</span>
+        </span>
+      </button>
+
       <button class="contact-btn btn-save" onclick="saveContact()" type="button">
         <svg class="contact-btn-icon" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
           <path d="M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2z"/>
@@ -248,6 +271,20 @@
   </div>
 
   <script>
+    function copyClabe(btn) {
+      navigator.clipboard.writeText('021180040549679220').then(function() {
+        var el = document.getElementById('clabe-val');
+        var orig = el.textContent;
+        el.textContent = '¡Copiado!';
+        setTimeout(function() { el.textContent = orig; }, 2000);
+      }).catch(function() {
+        var range = document.createRange();
+        range.selectNode(document.getElementById('clabe-val'));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+      });
+    }
+
     function saveContact() {
       var vcard = [
         'BEGIN:VCARD',
