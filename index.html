@@ -44,29 +44,32 @@
     /* ── Hero ── */
     .card-hero {
       background: var(--cream);
-      padding: 0;
+      padding: 36px 28px 24px;
+      text-align: center;
       position: relative;
       border-bottom: 4px solid var(--blue);
     }
 
-    .card-hero::before { display: none; }
-
-    /* Red banner */
-    .hero-banner {
+    /* Red top bar */
+    .card-hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 90px;
       background: var(--red);
-      padding: 20px 20px 16px;
-      display: flex;
-      align-items: center;
-      gap: 16px;
+      border-radius: 0;
     }
 
     .hero-logo {
-      width: 72px;
-      height: 72px;
-      border-radius: 4px;
+      width: 100px;
+      height: 100px;
+      border-radius: 6px;
       background: var(--white);
-      box-shadow: 0 2px 10px rgba(0,0,0,0.20);
-      flex-shrink: 0;
+      border: 3px solid var(--white);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+      margin: 0 auto 16px;
+      position: relative;
+      z-index: 1;
       overflow: hidden;
       display: flex;
       align-items: center;
@@ -74,19 +77,18 @@
     }
 
     .hero-logo img {
-      width: 60px;
-      height: 60px;
+      width: 88px;
+      height: 88px;
       object-fit: contain;
     }
-
-    .hero-text { display: flex; flex-direction: column; gap: 4px; }
 
     .card-name {
       font-family: 'Poppins', sans-serif;
       font-weight: 700;
-      font-size: clamp(1.2rem, 5vw, 1.5rem);
-      color: var(--white);
+      font-size: clamp(1.5rem, 6vw, 1.9rem);
+      color: var(--dark);
       line-height: 1.15;
+      margin-bottom: 6px;
       white-space: nowrap;
     }
 
@@ -96,12 +98,12 @@
       color: var(--white);
       font-family: 'Nunito', sans-serif;
       font-weight: 600;
-      font-size: 0.6rem;
-      letter-spacing: 2.5px;
+      font-size: 0.65rem;
+      letter-spacing: 3px;
       text-transform: uppercase;
-      padding: 4px 10px;
+      padding: 5px 14px;
       border-radius: 2px;
-      align-self: flex-start;
+      margin-top: 4px;
     }
 
     /* ── Contact body ── */
@@ -209,15 +211,11 @@
 
     <!-- HERO -->
     <div class="card-hero">
-      <div class="hero-banner">
-        <div class="hero-logo">
-          <img src="house2.png" alt="Casa icono">
-        </div>
-        <div class="hero-text">
-          <h1 class="card-name">Teodoro González</h1>
-          <p class="card-role">Arrendador &amp; Constructor</p>
-        </div>
+      <div class="hero-logo">
+        <img src="house2.png" alt="Casa icono">
       </div>
+      <h1 class="card-name">Teodoro González</h1>
+      <p class="card-role">Arrendador &amp; Constructor</p>
     </div>
 
     <!-- BODY -->
