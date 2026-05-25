@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -6,27 +6,19 @@
   <title>Teodoro González — Arrendador y Constructor</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     a { color: inherit; text-decoration: none; }
 
     :root {
-      --red:        #A82A20;
-      --red-dk:     #7E1E16;
-      --gold:       #C97A10;
-      --gold-dk:    #9A5C08;
-      --navy:       #2C3A4A;
-      --navy-lt:    #3A4E62;
-      --cream:      #FAF7F2;
-      --cream-dk:   #EDE5D8;
-      --dark:       #1A1410;
-      --mid:        #6A5E50;
-      --white:      #FFFFFF;
+      --red:   #A82A20;
+      --navy:  #2C3A4A;
+      --white: #FFFFFF;
     }
 
     body {
-      background: radial-gradient(ellipse at 50% 40%, #3d1410 0%, #1a0b09 70%);
+      background: radial-gradient(ellipse at 50% 30%, #fce8e8 0%, #f0e4e4 70%);
       min-height: 100vh;
       padding: 28px 16px 36px;
       font-family: 'Poppins', sans-serif;
@@ -42,26 +34,25 @@
       margin: 0 auto;
       border-radius: 8px;
       overflow: hidden;
-      border: 1px solid rgba(168,42,32,0.35);
-      box-shadow: 0 0 60px rgba(168,42,32,0.25), 0 8px 40px rgba(0,0,0,0.8);
+      border: 1px solid rgba(168,42,32,0.2);
+      box-shadow: 0 4px 40px rgba(168,42,32,0.15), 0 8px 32px rgba(0,0,0,0.12);
     }
 
     /* ── Hero ── */
     .card-hero {
-      background: linear-gradient(160deg, #2a0e0b 0%, #1e0c0a 100%);
+      background: #ffffff;
       padding: 32px 28px 28px;
       text-align: center;
-      position: relative;
-      border-bottom: 1px solid rgba(168,42,32,0.35);
+      border-bottom: 1px solid rgba(168,42,32,0.15);
     }
 
     .hero-logo {
       width: 110px;
       height: 110px;
       border-radius: 8px;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(168,42,32,0.3);
-      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      background: #f5f0ea;
+      border: 1px solid rgba(168,42,32,0.15);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
       margin: 0 auto 18px;
       overflow: hidden;
       display: flex;
@@ -79,7 +70,7 @@
       font-family: 'Poppins', sans-serif;
       font-weight: 700;
       font-size: clamp(1.5rem, 6vw, 1.9rem);
-      color: #FAF7F2;
+      color: var(--navy);
       line-height: 1.15;
       margin-bottom: 10px;
       white-space: nowrap;
@@ -100,7 +91,7 @@
 
     /* ── Contact body ── */
     .card-body {
-      background: #130806;
+      background: #2e3347;
       padding: 20px 20px 24px;
       display: flex;
       flex-direction: column;
@@ -114,8 +105,8 @@
       padding: 13px 16px;
       border-radius: 6px;
       font-family: 'Poppins', sans-serif;
-      background: #2a1210;
-      border: 1px solid rgba(168,42,32,0.3);
+      background: #3a4158;
+      border: 1px solid rgba(255,255,255,0.08);
       color: var(--white);
       cursor: pointer;
       width: 100%;
@@ -123,7 +114,7 @@
       transition: opacity 0.18s ease, transform 0.1s ease;
     }
 
-    .contact-btn:hover { opacity: 0.75; transform: translateY(-1px); }
+    .contact-btn:hover { opacity: 0.8; transform: translateY(-1px); }
     .contact-btn:active { transform: translateY(0); }
 
     .contact-btn-icon {
@@ -144,7 +135,7 @@
       font-size: 0.6rem;
       letter-spacing: 2px;
       text-transform: uppercase;
-      color: #e07060;
+      color: rgba(201,122,16,0.9);
       font-weight: 600;
     }
 
@@ -169,25 +160,6 @@
     }
 
     .btn-save:hover { opacity: 0.85; }
-
-    /* ── Footer ── */
-    .card-footer {
-      background: transparent;
-      border-top: none;
-      padding: 16px 20px 4px;
-      text-align: center;
-    }
-
-    .card-footer a {
-      font-size: 0.58rem;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: rgba(44,58,74,0.45);
-      font-weight: 700;
-      transition: opacity 0.2s;
-    }
-
-    .card-footer a:hover { color: rgba(44,58,74,0.75); }
   </style>
 </head>
 <body>
@@ -255,7 +227,15 @@
   </div>
 
   <footer style="text-align:center;padding:20px 0 12px">
-    <a href="https://www.eurekawebsites.tech/" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;font-size:0.62rem;letter-spacing:1.5px;text-transform:uppercase;color:rgba(44,58,74,0.45);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='rgba(44,58,74,0.75)'" onmouseout="this.style.color='rgba(44,58,74,0.45)'"><span style="display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:radial-gradient(circle,#fce8e8 0%,#f0d0d0 60%,#e8b8b8 100%);border:1px solid rgba(168,42,32,0.3);margin-right:7px;flex-shrink:0;"><img src="https://raw.githubusercontent.com/eurekawebsites/eureka-website/main/eureka-bird-1.svg" alt="" style="width:13px;height:13px;display:block;" /></span>Powered by Eureka Websites</a>
+    <a href="https://www.eurekawebsites.tech/" target="_blank" rel="noopener noreferrer"
+       style="display:inline-flex;align-items:center;font-size:0.62rem;letter-spacing:1.5px;text-transform:uppercase;color:rgba(44,58,74,0.45);text-decoration:none;transition:color 0.2s;"
+       onmouseover="this.style.color='rgba(44,58,74,0.75)'"
+       onmouseout="this.style.color='rgba(44,58,74,0.45)'">
+      <span style="display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:radial-gradient(circle,#fde8e4 0%,#f8cfc9 60%,#f0b8b0 100%);border:1px solid rgba(240,96,100,0.4);margin-right:7px;flex-shrink:0;">
+        <img src="https://raw.githubusercontent.com/eurekawebsites/eureka-website/main/eureka-bird-1.svg" alt="" style="width:13px;height:13px;display:block;" />
+      </span>
+      Powered by Eureka Websites
+    </a>
   </footer>
 
   <script>
