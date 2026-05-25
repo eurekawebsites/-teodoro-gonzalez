@@ -26,46 +26,47 @@
     }
 
     body {
-      background: #C8C0B0;
+      background: #0a0c10;
       min-height: 100vh;
       padding: 28px 16px 36px;
-      font-family: 'Nunito', sans-serif;
+      font-family: 'Poppins', sans-serif;
       -webkit-font-smoothing: antialiased;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .card {
       width: 100%;
       max-width: 400px;
       margin: 0 auto;
-      border-radius: 4px;
+      border-radius: 8px;
       overflow: hidden;
-      box-shadow: 0 12px 40px rgba(0,0,0,0.20), 0 2px 6px rgba(0,0,0,0.10);
+      border: 1px solid rgba(168,42,32,0.25);
+      box-shadow: 0 0 40px rgba(168,42,32,0.1), 0 8px 40px rgba(0,0,0,0.7);
     }
 
-    /* ── Hero: dark navy top ── */
+    /* ── Hero ── */
     .card-hero {
-      background: var(--navy);
+      background: linear-gradient(160deg, #1a0806 0%, #111318 100%);
       padding: 32px 28px 28px;
       text-align: center;
       position: relative;
+      border-bottom: 1px solid rgba(168,42,32,0.2);
     }
 
     /* Red bottom accent line */
     .card-hero::after {
-      content: '';
-      position: absolute;
-      bottom: 0; left: 0; right: 0;
-      height: 3px;
-      background: var(--red);
+      display: none;
     }
 
     .hero-logo {
-      width: 100px;
-      height: 100px;
-      border-radius: 6px;
-      background: var(--cream);
-      border: 3px solid rgba(255,255,255,0.15);
-      box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+      width: 110px;
+      height: 110px;
+      border-radius: 8px;
+      background: #1e1e1e;
+      border: 1px solid rgba(168,42,32,0.4);
+      box-shadow: 0 0 20px rgba(168,42,32,0.3);
       margin: 0 auto 18px;
       overflow: hidden;
       display: flex;
@@ -93,7 +94,7 @@
       display: inline-block;
       background: var(--red);
       color: var(--white);
-      font-family: 'Nunito', sans-serif;
+      font-family: 'Poppins', sans-serif;
       font-weight: 600;
       font-size: 0.65rem;
       letter-spacing: 3px;
@@ -104,7 +105,7 @@
 
     /* ── Contact body ── */
     .card-body {
-      background: var(--cream);
+      background: #111318;
       padding: 20px 20px 24px;
       display: flex;
       flex-direction: column;
@@ -116,21 +117,18 @@
       align-items: center;
       gap: 14px;
       padding: 13px 16px;
-      border-radius: 3px;
-      font-family: 'Nunito', sans-serif;
-      background: var(--cream);
-      border: 1.5px solid var(--cream-dk);
-      color: var(--dark);
+      border-radius: 6px;
+      font-family: 'Poppins', sans-serif;
+      background: #181b22;
+      border: 1px solid rgba(168,42,32,0.15);
+      color: var(--white);
       cursor: pointer;
       width: 100%;
       text-align: left;
-      transition: transform 0.12s ease, box-shadow 0.12s ease;
+      transition: opacity 0.18s ease, transform 0.1s ease;
     }
 
-    .contact-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(44,26,10,0.12);
-    }
+    .contact-btn:hover { opacity: 0.75; transform: translateY(-1px); }
     .contact-btn:active { transform: translateY(0); }
 
     .contact-btn-icon {
@@ -151,39 +149,36 @@
       font-size: 0.6rem;
       letter-spacing: 2px;
       text-transform: uppercase;
-      color: var(--mid);
-      font-weight: 700;
+      color: rgba(168,42,32,0.7);
+      font-weight: 600;
     }
 
     .contact-btn-value {
       font-size: 0.95rem;
-      font-weight: 600;
-      color: var(--dark);
+      font-weight: 500;
+      color: var(--white);
     }
 
     /* Save button */
     .btn-save {
-      background: var(--gold);
-      border-color: var(--gold-dk);
+      background: var(--red);
+      border-color: var(--red);
       color: var(--white);
       justify-content: center;
       gap: 10px;
-      font-weight: 800;
+      font-weight: 700;
       font-size: 0.78rem;
       letter-spacing: 1.5px;
       text-transform: uppercase;
       padding: 14px 16px;
     }
 
-    .btn-save:hover {
-      background: var(--gold-dk);
-      border-color: var(--gold-dk);
-    }
+    .btn-save:hover { opacity: 0.85; }
 
     /* ── Footer ── */
     .card-footer {
-      background: var(--navy);
-      border-top: 1px solid rgba(255,255,255,0.08);
+      background: #111318;
+      border-top: 1px solid rgba(255,255,255,0.06);
       padding: 12px 20px;
       text-align: center;
     }
@@ -192,13 +187,12 @@
       font-size: 0.58rem;
       letter-spacing: 2px;
       text-transform: uppercase;
-      color: var(--white);
-      opacity: 0.35;
+      color: rgba(255,255,255,0.25);
       font-weight: 700;
       transition: opacity 0.2s;
     }
 
-    .card-footer a:hover { opacity: 1; }
+    .card-footer a:hover { color: rgba(255,255,255,0.6); }
   </style>
 </head>
 <body>
