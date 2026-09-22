@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "teodoro-gonzalez",
     "public": ".",
     "ignore": [
       "firebase.json",
